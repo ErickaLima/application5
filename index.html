@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplicacion 5</title>
+
+<!-- grupo CSS -->
+<link rel="stylesheet" href="css/app5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="js/phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+	
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="wowvisor/engine1/style.css" />
+	<script type="text/javascript" src="wowvisor/engine1/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section -->
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine2/style.css" media="screen" />
+	<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/b1.jpg','imagenes/b2.jpg','imagenes/b3.jpg','imagenes/b4.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    	<h1>Información sobre el día de la Tierra</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    	<h2>Fecha y por qué</h2>
+    	<p>Se muestra la fecha y el por qué se celebra.</p>
+    	</a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Importancia de cuidarla</h2>
+        <p>Se muestran motivos para cuidarla</p>
+        </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Acciones para evitar la contaminación</h2>
+        <p>Se muestra información sobre el cómo reducir la contaminación</p>
+        </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Cambio climático</h2>
+        <p>Se muestra información sobre qué es, y en qué nos afecta</p>
+        </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Hipótesis Gaia</h2>
+        <p>Nos dice que es esta interesante teoría</p>
+        </a>
+    </li>
+        <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Reflexión</h2>
+        <p>Una breve opinión acerca del porqué debemos cuidarla</p>
+        </a>
+    </li>
+          <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>¿Cómo se ve la Tierra en mi comunidad?</h2>
+        <p>Se muestran fotos e información acerca de como se ve en nuestra comunidad el cambio climático.</p>
+        </a>
+    </li>
+    </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+	<div>
+    	<img src="res/android/mdpi.jpg" width="128" height="76">
+    </div>
+    <div>
+       <h4>Aplicacion Cinco</h4>
+       <h4>Ericka Lisset Lima Álamo</h4>
+    </div>
+</div>
+</div>
+<!------------------------------------------------------------------------------------------------------------------->
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Fecha del día de la Tierra y por qué se celebra.</h1>
+  </div>
+		<div data-role="collapsible" data-content-theme="false">
+         <h1>¿En qué fecha se celebra?</h1>
+          <div>
+<p> El Día de la Tierra es un día celebrado en muchos países el 22 de abril.</p><img src="imagenes/imagen1.jpg" width="50%" height="50%">
+          </div>
+     </div>
+    
+		<div data-role="collapsible" data-content-theme="false">
+         <h1>¿Por qué se celebra este día?</h1>
+          <div>
+<p>Gaylord Nelson escogió la fecha de tal manera que se maximizara la participación en las universidades, ya que lo consideraba un encuentro entre maestros y alumnos. Determinó que la semana del 19 al 25 de abril era la mejor apuesta, ya que esta no coincidía con los exámenes o las vacaciones de primavera.8 Más aún, esta fecha no tenía ningún conflicto con celebraciones religiosas como la Pascua o el Pésaj, y era demasiado tarde en primavera para tener un clima decente. Más estudiantes preferirían estar en clase y habría menos competencia con otros eventos de media semana –así que eligió el miércoles 22 de abril. El día también coincidió con el aniversario del natalicio de John Muir, notable conservacionista.</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','imagenes/imagen9.jpg',1)"><img src="imagenes/imagen8.jpg" width="225" height="225" id="Image23"></a>         
+		  </div>
+        </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+	<div>
+    	<img src="res/android/mdpi.jpg" width="128" height="76">
+    </div>
+    <div>
+       <h4>Aplicacion Cinco</h4>
+       <h4>Ericka Lisset Lima Álamo</h4>
+    </div>
+</div>
+</div>
+<!------------------------------------------------------------------------------------------------------------------->
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Importancia de cuidarla</h1>
+   </div>
+   <div data-role="content" align="center">
+   <div>
+   <p>El planeta Tierra es nuestro mundo,es nuestro hogar. La cuna, el hábitat de miles y miles de formas de vidas y maravillas únicas en el universo; el planeta Tierra es nuestro mundo, es nuestro hogar es la cuna el hábitat de miles y miles de formas de vidas y maravillas únicas en el universo y debemos aprender a cuidarlo y quererlo. Como es necesario, ya que de la misma forma que nos preocupamos por mejorar y mantener bien nuestro propio hogar lo mismo debemos hacer con nuestro planeta; para de esta forma vivir mejor.
+ </p>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imagenes/imagen3.jpg',1)"><img src="imagenes/imagen2.jpg" width="435" height="435" id="Image"></a>   
+   </div>
+   </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+	<div>
+    	<img src="res/android/mdpi.jpg" width="128" height="76">
+    </div>
+    <div>
+       <h4>Aplicacion Cinco</h4>
+       <h4>Ericka Lisset Lima Álamo</h4>
+    </div>
+</div>
+</div>
+<!------------------------------------------------------------------------------------------------------------------->
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-back-btn-text="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Acciones para no contaminar más a la Tierra</h1>
+   </div>
+   <div data-role="content" align="center">
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imagenes/imagen5.jpg',1)"><img src="imagenes/imagen4.jpg" width="467" height="307" id="Image5"></a>
+   <div>
+<ol>
+  <li>  Antes de comprar un producto, hazte la pregunta si realmente lo necesitas. Cualquier consumo innecesario es en esencia antiecológico y antieconómico, ¿no lo crees?.</li>
+    <li> Sé crítico con la publicidad. Mira las cualidades de los productos, no los sueños que te venden en la publicidad muchas veces engañosa</li>
+    <li>Antes de tirar cualquier cosa a la basura, piensa si se puede reutilizar, reciclar o reparar, o si puede ser útil para otra persona.</li>
+    <li> Evita las latas de bebidas, vale más el envase que su contenido y apenas se recuperan. La energía necesaria para producir y transportar una lata equivale a la mitad del bote lleno de petróleo.</li>
+    <li>La energía que producen las pilas es más de 600 veces más cara que la de la red. Conecta los aparatos a la red siempre que esto sea posible. Si te es imprescindible usar pilas (nunca tires las usadas a la basura), procura que sean recargables.</li>
+    <li>Desconecta los aparatos eléctricos de la red cuando no están funcionando. Algunos aparatos (como televisores) siguen gastando hasta un 33% de la energía.</li>
+    <li>Prescinde de los electrodomésticos innecesarios como cepillos de dientes, abrelatas, cuchillos eléctricos, etc. Son mas cómodos algunos pero ninguno se iguala al sentimiento de hacerlo manualmente y saber que ahorraste miles de kilogramos de gases contaminantes que pudieron haberse liberado en alguna fábrica …China, seguro. Ten encuenta los criterios de ahorro energético al comprar nuevos frigoríficos, lavadoras, etc.</li>
+    <li> Usa bombillas LED que duran mucho más que las bombillas  tradicionales y que inclusiva las fluorescentes. Son de bajo consumo de energía para dar la misma cantidad de luz, con lo cual se termina ahorrando dinero y colaborando con el medio ambiente.</li>
+    <li> Evita los aerosoles que contienen CFCs y que son causantes de la destrucción de la capa de ozono, u otros gases que también contribuyen al efecto invernadero. Los pulverizadores son una buena alternativa y son recargables.</li>
+    <li>La gran mayoría de los productos de limpieza que se anuncian no sólo son innecesarios sino también muy nocivos para el medio ambiente. Casi toda la casa puede quedar perfectamente limpia con jabón, bicarbonato, vinagre y limón.</li>
+    <li>Los ambientadores no eliminan los malos olores sino que desprenden otros más fuertes que nos impiden detectar los primeros. Que éstos sean legítimamente ecológicos, biodegradables y libres de químicos agresivos.</li>
+    <li>Evita usar productos agresivos: limpiahornos, lejía, etc., que impiden los procesos biológicos de depuración del agua. Nunca tires productos tóxicos, pintura o aceite de cocinar al desagüe. Llama a la empresa de agua y alcantarillado y pregunta. Esa es la salida moralmente correcta y tendrás a tu consciencia feliz. Lo otro, tirar donde te apetece para ser un “borrego” mas de los que sobran.</li>
+    <li>Para ahorrar agua, instala un sistema de doble descarga en el inodoro, ya que vaciar la cisterna entera supone gastar de 10 a litros. Repara los grifos que gotean. Una gota por segundo son 30 litros al día. Hay que poner el hombro al cuidado del medio ambiente.</li>
+    <li>Tapa siempre las cazuelas para no despilfarrar calor. La olla exprés es la mejor opción: ahorra tiempo y energía. Si no, son preferibles las cazuelas de hierro, acero inoxidable o barro antes que las de aluminio.</li>
+    <li> En la alimentación, evita la comida basura o precocinada, ya que suele contener muchos aditivos y conservantes y viene sobreempaquetada. Procura consumir alimentos frescos, de temporada y de producción local.</li>
+    <li>Rechaza los alimentos envasados en bandejas de poliestireno expandido (corcho blanco). Los productos no son mejores porque vengan envueltos en plástico.</li>
+    <li> Guarda los alimentos en la clásica fiambrera o tarros de cristal en lugar de envolverlos o taparlos con película de plástico o aluminio.</li>
+    <li> Evita los productos que recorren grandes distancias antes de llegar al consumidor. Da preferencia a las alternativas locales. No tiene sentido consumir miel chilena, cerveza mejicana o galletas danesas. Solo incrementas la huella ecológica que dejas en el planeta.</li>
+    <li>Aprovecha bien el papel: úsalo por las dos caras, utilízalo reciclado y envíalo después a reciclar. Rechaza el papel blanqueado con cloro.</li>
+    <li>Apúntate a la Lista Robinson para dejar de recibir publicidad personalizada por correo. Coloca un distintivo en tu buzón indicando que no quieres propaganda.</li>
+    <li>Si te es imprescindible usar el coche para acudir al trabajo, compártelo con otros compañeros o vecinos (“carpool“). En el tiempo o las vacaciones, no recurras siempre al coche, explora otras posibilidades de viajar o hacer excursiones en transporte público.</li>
+    <li>Es absurdo pretender estar en manga corta durante el invierno, a costa de gastar mucha calefacción. Es preferible ponerse un jersey. En verano no abuses del aire acondicionado, que también libera CFCs.</li>
+    <li>Evita los productos con PVC. Producen furanos y dioxinas cuando son incinerados.</li>
+    <li>Si te ha caducado algún medicamento, no lo tires a la basura ni al WC. Llévalo a la farmacia, donde deben hacerse cargo de él.</li>
+    <li> No agobies a los niños con juguetes complejos que requieren baterías. Déjales jugar con su imaginación. Es mas sano y hasta les favorecerás con un mejor desarrollo cognitivo.</li>
+    <li>Utiliza bolsas ecológicas en tus compras. No te cuesta nada, sirven igual que las comunes pero tienes la seguridad que no demandaron muchos recursos en su fabricación.</li>
+    <li>Retomemos la costumbre de usar botellas retornables. Por cada una que usemos habremos evitado que las fábricas de plásticos hayan producido contaminantes.</li>
+    <li>En muchas ciudades la calidad del agua de grifo es bastante buena, de serlo en tu ciudad toma el agua de ahí y evita el agua embotellada.</li>
+    <li> Deja el auto, camina, respira, disfruta del aire libre (donde haya aire puro y no crimen), has ejercicio y no uses el elevador, sube las escaleras, usarás mejor energía eléctrica y fortalecerás la salud.</li>
+    <li> Reutiliza el aceite de cocina para hacerlos jabones en barra y no viertas el aceite usado por el fregador.</li>
+    <li> No compres lo que no hace falta. Necesitemos menos y tendremos mas.</li>
+    <li>Procura consumir tus alimentos y bebidas en el local de expendio de comida, evitarás innecesariamente más embalaje que genera basura como plásticos, cartón y papel.</li>
+    <li>El agua que utilices en la preparación de alimentos puede ser almacenada para luego usarla en el riego de plantas.</li>
+    <li>Utiliza la escoba para limpiar tus pisos y no malgastarás agua de manguera en tiempos donde tener accesos seguro a este elemento vital se ha convertido en un privilegio. Además, con más escobas, mas salud por el ejercicio a realizar.</li>
+    <li>Si es posible, consume alimentos producidos en granjas orgánicas que en los de agricultura intensiva porque pierden cuatro veces más de suelo.</li>
+    <li>Cierra el grifo al cepillarte los dientes. Ahorrarás entre 40 a 80 litros de agua cada mes.</li>
+    <li>Descongela el refrigerador para evitar que haya escape de frío y demande más energía. Cuando la capa de hielo llegue a los 5 milímetros hazlo. El exceso de hielo produce un incremento en el consumo energético de hasta 20%.</li>
+    <li> Espera a acumular una cantidad considerable de ropa sucia para usar recién la lavadora. Lavar un par de prendas es un desperdicio de agua, energía, detergente y tiempo.</li>
+    <li>Si puedes escoger viajar por avión, tren, bus o tu automóvil, escoge el que menos contamine, Si son varias personas que viajan o se transportan juntos mejor aún. Reducirás la huella ecológica.</li>
+    <li>Infórmate sobre el delicado estado de nuestro ambiente. Debemos estar educados y conscientes que requerimos medidas urgentes y ciudadanos predispuestos a cambiar esta realidad.</li>
+    <li> Sé crítico con la publicidad. Mira las cualidades de los productos, no los sueños a publicidad a veces engaña.</li>
+    <li>Las 3R´s ahora se incrementaron, te propongo: reutilizar, reciclar, reparar, rechazar, reclamar, redistribuir, reeducar a fin de optimizar el consumo de bienes y generar menos desperdicios.</li>
+    <li>Riega tus plantas de preferencia o muy temprano o muy tarde. La idea es evitar la evaporación del agua por el sol. Riega con mangueras ahorradoras de agua y deja de malgastar el agua “inundando” el césped.</li>
+    <li>Compra productos a granel, porque son más baratos, no tienen una huella ecológica mayor que los comercializados a detalle. Ahorrarás dinero y darás una mano al medio ambiente al evitar que los envases vayan a la basura.</li>
+    <li>Si tienes la idea de adquirir un automóvil, elige los modelos compactos y de mayor eficiencia energética en el consumo. No necesitas alimentar tu “ego” con esos “tanques” que tragan combustibles (como los “Hummer”) sino utilizar el automotor de manera inteligente y amigable con el ambiente.</li>
+    <li>Cocina la cantidad adecuada para evitar tirar la basura así como compra lo que vayas a consumir para no gastar mas de lo debido como también evitar botar los alimentos.</li>
+ </ol>
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+	<div>
+    	<img src="res/android/mdpi.jpg" width="128" height="76">
+    </div>
+    <div>
+       <h4>Aplicacion Cinco</h4>
+       <h4>Ericka Lisset Lima Álamo</h4>
+    </div>
+</div>
+</div>
+<!------------------------------------------------------------------------------------------------------------------->
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Cambio climático</h1>
+   </div>
+   <div data-role="content" align="center">
+   <div>
+<p>El Cambio Climático es un cambio significativo y duradero de los patrones locales o globales del clima, las causas pueden ser naturales, como por ejemplo, variaciones en la energía que se recibe del Sol, erupciones volcánicas, circulación oceánica, procesos biológicos y otros, o puede ser causada por influencia antrópica (por las actividades humanas), como por ejemplo, a través de la emisión de CO2 y otros gases que atrapan calor, o alteración del uso de grandes extensiones de suelos que causan, finalmente, un calentamiento global.</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','imagenes/imagen7.gif',1)"><img src="imagenes/imagen6.jpg" width="404" height="282" id="Image6"></a>
+   </div>
+   </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+	<div>
+    	<img src="res/android/mdpi.jpg" width="128" height="76">
+    </div>
+    <div>
+       <h4>Aplicacion Cinco</h4>
+       <h4>Ericka Lisset Lima Álamo</h4>
+    </div>
+</div>
+</div>
+<!------------------------------------------------------------------------------------------------------------------->
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Hipótesis Gaia</h1>
+   </div>
+         <!-- Start WOWSlider.com BODY section -->
+	<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+<li><img src="wowvisor/data1/images/gaia.jpg" alt="Gaia" title="Gaia" id="wows1_0"/></li>
+<li><img src="wowvisor/data1/images/gaia2.jpg" alt="Gaia2" title="Gaia2" id="wows1_1"/></li>
+<li><img src="wowvisor/data1/images/gaia3.jpg" alt="Gaia3" title="Gaia3" id="wows1_2"/></li>
+<li><img src="wowvisor/data1/images/gaia4.jpg" alt="Gaia4" title="Gaia4" id="wows1_3"/></li>
+<li><img src="wowvisor/data1/images/gaia5.jpg" alt="Gaia5" title="Gaia5" id="wows1_4"/></li>
+<li><img src="wowvisor/data1/images/gaia6.jpg" alt="Gaia6" title="Gaia6" id="wows1_5"/></li>
+<li><img src="wowvisor/data1/images/gaia7.jpg" alt="Gaia7" title="Gaia7" id="wows1_6"/></li>
+<li><img src="wowvisor/data1/images/gaia8.jpg" alt="Gaia8" title="Gaia8" id="wows1_7"/></li>
+</ul></div>
+<div class="ws_bullets"><div>
+<a href="#" title="Gaia"><img src="wowvisor/data1/tooltips/gaia.jpg" alt="Gaia"/>1</a>
+<a href="#" title="Gaia2"><img src="wowvisor/data1/tooltips/gaia2.jpg" alt="Gaia2"/>2</a>
+<a href="#" title="Gaia3"><img src="wowvisor/data1/tooltips/gaia3.jpg" alt="Gaia3"/>3</a>
+<a href="#" title="Gaia4"><img src="wowvisor/data1/tooltips/gaia4.jpg" alt="Gaia4"/>4</a>
+<a href="#" title="Gaia5"><img src="wowvisor/data1/tooltips/gaia5.jpg" alt="Gaia5"/>5</a>
+<a href="#" title="Gaia6"><img src="wowvisor/data1/tooltips/gaia6.jpg" alt="Gaia6"/>6</a>
+<a href="#" title="Gaia7"><img src="wowvisor/data1/tooltips/gaia7.jpg" alt="Gaia7"/>7</a>
+<a href="#" title="Gaia8"><img src="wowvisor/data1/tooltips/gaia8.jpg" alt="Gaia8"/>8</a>
+</div></div>
+<span class="wsl"><a href="http://wowslider.com">Slideshow Online</a> by WOWSlider.com v4.8</span>
+	<div class="ws_shadow"></div>
+	</div>
+	<script type="text/javascript" src="wowvisor/engine1/wowslider.js"></script>
+	<script type="text/javascript" src="wowvisor/engine1/script.js"></script>
+	<!-- End WOWSlider.com BODY section -->
+   <div data-role="content" align="center" >
+   <div>
+
+<p>La hipótesis de Gaia es un conjunto de modelos científicos de la biosfera en el cual se postula que la vida fomenta y mantiene unas condiciones adecuadas para sí misma, afectando al entorno. Según la hipótesis de Gaia, la atmósfera y la parte superficial del planeta Tierra se comportan como un todo coherente donde la vida, su componente característico, se encarga de autorregular sus condiciones esenciales tales como la temperatura, composición química y salinidad en el caso de los océanos. Gaia se comportaría como un sistema auto-regulador (que tiende al equilibrio). La teoría fue ideada por el químico James Lovelock en 19691 (aunque publicada en 1979) siendo apoyada y extendida por la bióloga Lynn Margulis. Lovelock estaba trabajando en ella cuando se lo comentó al escritor William Golding, fue éste quien le sugirió que la denominase “Gaia”, diosa griega de la Tierra (Gaia, Gea o Gaya). </p><a href="http://www.inecc.gob.mx/con-eco-ch/402-con-eco-gaia?format=pdf">Pincha aquí para saber más información sobre esto.</a>
+   </div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+	<div>
+    	<img src="res/android/mdpi.jpg" width="128" height="76">
+    </div>
+    <div>
+       <h4>Aplicacion Cinco</h4>
+       <h4>Ericka Lisset Lima Álamo</h4>
+    </div>
+</div>
+</div>
+<!------------------------------------------------------------------------------------------------------------------->
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Reflexión</h1>
+   </div>
+   <div data-role="content" align="center">
+   <div>
+     <p>Necesitamos tomar más conciencia acerca de que es lo que hacemos a diario, porque esas cosas que nos parecen pequeñas, son las que pueden hacer grandes daños a nuestro planeta, y es una hipocresía y tontería decir que eso esta sucediendo en otras partes del mundo, o que a nosotros no nos afecta tanto porque en nuestro país no hay tantas frábricas, porque en México se encuentra una ciudad demasiado contaminada, y grande. La ciudad de México. El problema y la solución somos todos, no podemos cegarnos. podemos empezar desde pequeñas cosas, como separar basura, y decirle a nuestro vecino que haga lo mismo, e ir formando una cadena. Irnos creando conciencia acerca de que en la Tierra vivimos todos y que si algo le pasa a ella, como irse derritiendo los polos, aunque suceda lejos de aquí, sería fatal para nosotros. El calentamiento es Global, y no se va a saltar México, solo porque nos creemos los mejores en todo.</p>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','imagenes/imagen11.jpg',1)"><img src="imagenes/imagen10.jpg" width="460" height="444" id="Image2"></a> 
+     </div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+	<div>
+    	<img src="res/android/mdpi.jpg" width="128" height="76">
+    </div>
+    <div>
+       <h4>Aplicacion Cinco</h4>
+       <h4>Ericka Lisset Lima Álamo</h4>
+    </div>
+</div>
+</div>
+<!------------------------------------------------------------------------------------------------------------------->
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>¿Cómo se ve la Tierra en mi comunidad?</h1>
+   </div>
+	<div data-role="content" align="center">      
+       <div>
+       <p> skjhskjha</p>
+       <!-- Start WOWSlider.com BODY section id=wowslider-container2 -->
+	<div id="wowslider-container2">
+	<div class="ws_images"><ul>
+<li><img src="data2/images/received_1067921543253624.jpg" alt="received_1067921543253624" title="received_1067921543253624" id="wows2_0"/></li>
+<li><img src="data2/images/received_1067921693253609.jpg" alt="received_1067921693253609" title="received_1067921693253609" id="wows2_1"/></li>
+<li><img src="data2/images/received_1067921729920272.jpg" alt="received_1067921729920272" title="received_1067921729920272" id="wows2_2"/></li>
+<li><img src="data2/images/received_1067921793253599.jpg" alt="received_1067921793253599" title="received_1067921793253599" id="wows2_3"/></li>
+<li><img src="data2/images/received_1067921836586928.jpg" alt="received_1067921836586928" title="received_1067921836586928" id="wows2_4"/></li>
+</ul></div>
+<div class="ws_bullets"><div>
+<a href="#" title="received_1067921543253624"><img src="data2/tooltips/received_1067921543253624.jpg" alt="received_1067921543253624"/>1</a>
+<a href="#" title="received_1067921693253609"><img src="data2/tooltips/received_1067921693253609.jpg" alt="received_1067921693253609"/>2</a>
+<a href="#" title="received_1067921729920272"><img src="data2/tooltips/received_1067921729920272.jpg" alt="received_1067921729920272"/>3</a>
+<a href="#" title="received_1067921793253599"><img src="data2/tooltips/received_1067921793253599.jpg" alt="received_1067921793253599"/>4</a>
+<a href="#" title="received_1067921836586928"><img src="data2/tooltips/received_1067921836586928.jpg" alt="received_1067921836586928"/>5</a>
+</div></div>
+<span class="wsl"><a href="http://wowslider.com">Carousel App</a> by WOWSlider.com v4.8</span>
+	<a href="#" class="ws_frame"></a>
+	<div class="ws_shadow"></div>
+	</div>
+	<script type="text/javascript" src="engine2/wowslider.js"></script>
+	<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+       </div>
+
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+	<div>
+    	<img src="res/android/mdpi.jpg" width="128" height="76">
+    </div>
+    <div>
+       <h4>Aplicacion Cinco</h4>
+       <h4>Ericka Lisset Lima Álamo</h4>
+    </div>
+</div>
+</div>
+<!------------------------------------------------------------------------------------------------------------------->
+</div>
+</div>
+</body>
+</html>
